@@ -31,7 +31,7 @@ export default function AboutPage() {
 
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 bg-white overflow-hidden">
+        <section className="py-16 bg-gradient-to-br from-pink-200 via-yellow-100 to-orange-200 overflow-hidden">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center">
               <TextReveal>
@@ -65,8 +65,28 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* FEEL GOOD VIBES SECTION */}
+        <section className="py-16 bg-gradient-to-br from-pink-400 via-yellow-300 to-orange-300 text-white text-center rounded-3xl shadow-xl mx-2 my-8">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 flex items-center justify-center gap-3">
+              <span role="img" aria-label="smile">😄</span>
+              Feel Good Vibes
+              <span role="img" aria-label="bicycle">🚲</span>
+            </h2>
+            <p className="text-2xl md:text-3xl font-semibold mb-6">Chez Voilà Vélo Fruité, on pédale dans la bonne humeur !</p>
+            <p className="text-lg md:text-xl mb-4">Que tu sois petit ou grand, sportif ou non, viens créer ton smoothie, partager un sourire et vivre un moment unique.</p>
+            <p className="text-lg md:text-xl mb-4">Ici, tout le monde est le bienvenu pour faire le plein d'énergie, de saveurs et de fun ! <span role="img" aria-label="fruits">🍓🍌🍍</span></p>
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
+              <span className="inline-flex items-center bg-white/30 rounded-full px-6 py-3 text-xl font-bold shadow-lg"><span role="img" aria-label="inclusion">🤗</span> Inclusif</span>
+              <span className="inline-flex items-center bg-white/30 rounded-full px-6 py-3 text-xl font-bold shadow-lg"><span role="img" aria-label="energy">⚡</span> Énergique</span>
+              <span className="inline-flex items-center bg-white/30 rounded-full px-6 py-3 text-xl font-bold shadow-lg"><span role="img" aria-label="fun">🎉</span> Fun</span>
+              <span className="inline-flex items-center bg-white/30 rounded-full px-6 py-3 text-xl font-bold shadow-lg"><span role="img" aria-label="wellness">🌱</span> Bien-être</span>
+            </div>
+          </div>
+        </section>
+
         {/* Company Section - Red Background */}
-        <MotionSection className="py-24 bg-primary-red">
+        <MotionSection className="py-24 bg-gradient-to-br from-primary-red via-pink-200 to-yellow-100">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <ImageMaskReveal className="rounded-lg">
@@ -116,7 +136,7 @@ export default function AboutPage() {
         </MotionSection>
 
         {/* Founder Section - Blue Background */}
-        <MotionSection className="py-24 bg-trust-blue">
+        <MotionSection className="py-24 bg-gradient-to-br from-blue-300 via-blue-100 to-pink-100">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <StaggerContainer className="text-white order-2 lg:order-1 pr-0 lg:pr-12">
@@ -158,7 +178,7 @@ export default function AboutPage() {
         </MotionSection>
 
         {/* Mission Section - White Background */}
-        <MotionSection id="notre-mission" className="py-24 bg-white">
+        <MotionSection id="notre-mission" className="py-24 bg-gradient-to-br from-yellow-100 via-pink-100 to-green-100">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
@@ -172,16 +192,15 @@ export default function AboutPage() {
                   key={index} 
                   variant="fadeUp"
                   custom={index}
-                  className="text-center"
-                >
+                  className="text-center bg-white/80 rounded-2xl shadow-lg p-8 border-4 border-pink-200 hover:border-yellow-300 transition-all duration-300">
                   <AnimatedImage hoverEffect="rotate" className="text-6xl mb-6">
-                    <div>{value.icon}</div>
+                    <span>
+                      {value.icon || (index === 0 ? '🍏' : index === 1 ? '🌱' : index === 2 ? '🤝' : index === 3 ? '💪' : '🍓')}
+                    </span>
                   </AnimatedImage>
-                  
                   <h2 className="text-2xl font-bold text-primary-red mb-4">
                     {value.title}
                   </h2>
-                  
                   <p className="text-gray-700 leading-relaxed">
                     {value.description}
                   </p>
@@ -192,7 +211,7 @@ export default function AboutPage() {
         </MotionSection>
 
         {/* "We do this by" Section - Light Gray Background */}
-        <MotionSection className="py-24 bg-light-gray">
+        <MotionSection className="py-24 bg-gradient-to-br from-green-100 via-yellow-100 to-pink-100">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
@@ -213,7 +232,7 @@ export default function AboutPage() {
         </MotionSection>
 
         {/* Partners Section - White Background */}
-        <MotionSection id="nos-partenaires" className="py-24 bg-white">
+        <MotionSection id="nos-partenaires" className="py-24 bg-gradient-to-br from-pink-100 via-yellow-100 to-white">
           <div className="container mx-auto px-4">
             <ScrollReveal className="text-center mb-16">
               <h2 className="text-4xl font-bold text-secondary-yellow mb-8">
@@ -250,7 +269,7 @@ export default function AboutPage() {
         </MotionSection>
 
         {/* Service Areas Footer Section - Red Background */}
-        <MotionSection className="py-16 bg-primary-red">
+        <MotionSection className="py-16 bg-gradient-to-br from-primary-red via-pink-400 to-yellow-200">
           <div className="container mx-auto px-4">
             <StaggerContainer className="text-center">
               <AnimatedImage hoverEffect="scale" className="mb-16">
