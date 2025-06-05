@@ -30,41 +30,6 @@ export default function AboutPage() {
       <Header />
 
       <main className="pt-20">
-        {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-br from-pink-200 via-yellow-100 to-orange-200 overflow-hidden">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <div className="text-center">
-              <TextReveal>
-                <h1 className="text-5xl md:text-6xl font-bold text-dark-charcoal mb-6">
-                  {t('hero.title', "À Propos de Nous")}
-                </h1>
-              </TextReveal>
-              
-              <RedLineSeparator className="mb-8" />
-              
-              <ScrollReveal delay={0.3}>
-                <p className="text-2xl italic text-gray-700 mb-8 leading-relaxed">
-                  {t('hero.quote', "\"Nous engageons et inspirons les gens d'une manière amusante et saine!\"")}
-                </p>
-              </ScrollReveal>
-              
-              <AnimatedImage hoverEffect="scale" className="mb-6">
-                <Image
-                  src="/images/founders.jpg"
-                  alt="Leen et Micha, fondatrices de Voilà Vélo Fruité"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-2xl mx-auto"
-                />
-              </AnimatedImage>
-              
-              <ScrollReveal delay={0.5}>
-                <p className="text-lg text-gray-600">{t('hero.founders', "Leen et Micha, fondatrices de Voilà Vélo Fruité")}</p>
-              </ScrollReveal>
-            </div>
-          </div>
-        </section>
-
         {/* Company Section - Red Background */}
         <MotionSection className="py-24 bg-gradient-to-br from-primary-red via-pink-200 to-yellow-100">
           <div className="container mx-auto px-4">
