@@ -65,35 +65,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Inclusivité/convivialité après le hero */}
-        <section className="py-8 bg-gradient-to-r from-yellow-100 via-pink-100 to-green-100 text-center mx-2 rounded-2xl shadow mb-8">
-          <p className="text-xl md:text-2xl font-semibold text-primary-red flex items-center justify-center gap-2">
-            <span role="img" aria-label="coeur">💛</span>
-            Nous croyons en la positivité, le bien-être et l'inclusion de tous, petits et grands, pour partager des moments fun et savoureux ensemble !
-            <span role="img" aria-label="famille">👨‍👩‍👧‍👦</span>
-          </p>
-        </section>
-
-        {/* FEEL GOOD VIBES SECTION */}
-        <section className="py-16 bg-gradient-to-br from-pink-400 via-yellow-300 to-orange-300 text-white text-center rounded-3xl shadow-xl mx-2 my-8">
-          <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 flex items-center justify-center gap-3">
-              <span role="img" aria-label="smile">😄</span>
-              Feel Good Vibes
-              <span role="img" aria-label="bicycle">🚲</span>
-            </h2>
-            <p className="text-2xl md:text-3xl font-semibold mb-6">Chez Voilà Vélo Fruité, on pédale dans la bonne humeur !</p>
-            <p className="text-lg md:text-xl mb-4">Que tu sois petit ou grand, sportif ou non, viens créer ton smoothie, partager un sourire et vivre un moment unique.</p>
-            <p className="text-lg md:text-xl mb-4">Ici, tout le monde est le bienvenu pour faire le plein d'énergie, de saveurs et de fun ! <span role="img" aria-label="fruits">🍓🍌🍍</span></p>
-            <div className="flex flex-wrap justify-center gap-4 mt-8">
-              <span className="inline-flex items-center bg-white/30 rounded-full px-6 py-3 text-xl font-bold shadow-lg"><span role="img" aria-label="inclusion">🤗</span> Inclusif</span>
-              <span className="inline-flex items-center bg-white/30 rounded-full px-6 py-3 text-xl font-bold shadow-lg"><span role="img" aria-label="energy">⚡</span> Énergique</span>
-              <span className="inline-flex items-center bg-white/30 rounded-full px-6 py-3 text-xl font-bold shadow-lg"><span role="img" aria-label="fun">🎉</span> Fun</span>
-              <span className="inline-flex items-center bg-white/30 rounded-full px-6 py-3 text-xl font-bold shadow-lg"><span role="img" aria-label="wellness">🌱</span> Bien-être</span>
-            </div>
-          </div>
-        </section>
-
         {/* Company Section - Red Background */}
         <MotionSection className="py-24 bg-gradient-to-br from-primary-red via-pink-200 to-yellow-100">
           <div className="container mx-auto px-4">
